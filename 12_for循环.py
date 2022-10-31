@@ -9,6 +9,7 @@
     2. for语句
         for 临时变量 in 待处理的数据集（序列 ）：
             statement
+        临时遍历可以用，也可也不用
 
     3. for循环被称为遍历循环
 
@@ -19,6 +20,9 @@
             1. range(num1) 获得 [0, num1) 的数字序列
             2. range(num1, num2) 获得 [num1, num1) 的数字
             3. range(num1, num2, step) 获得 [num1, num1) 的步长为step的数字
+
+    6. 变量的作用域
+        for的临时变量不应该在外部访问这个临时变量，但是实际上仍然是可以访问的，只是不符合程序规范
 
 """
 
@@ -44,4 +48,10 @@ for x in range(1, 5, 10):
     print(x)
 for x in range(1, 5, 1):
     print(x)
+###
+
+###
+for x in range(5):
+    print(x)
+print(x)
 ###
