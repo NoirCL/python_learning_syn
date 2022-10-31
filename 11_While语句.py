@@ -21,6 +21,7 @@ import random
     
     4. while也可也被嵌套
         必须使用缩进来表示他们之间的层次关系
+        注意条件的设置，避免出现无限循环
         while con1:
             statement1:
             statement2:
