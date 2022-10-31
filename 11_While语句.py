@@ -20,6 +20,7 @@ import random
         3. while的内部语句必须缩进
     
     4. while也可也被嵌套
+        必须使用缩进来表示他们之间的层次关系
         while con1:
             statement1:
             statement2:
@@ -52,4 +53,13 @@ while int(a) != num:
 ###
 
 ###
+a = 1
+b = 1
+
+while a != 10:
+    print(a)
+    a += 1
+    while b != 10:
+        print(b)
+        b += 1
 ###
