@@ -9,8 +9,14 @@
 
 ###
 for x in range(5):
-    for y in range(100):
+    for y in range(11):
         if y == 10:
             break
     print(f"{x} + {y} = {x + y}")
+
+for x in range(5):
+    for y in range(11):
+        if y == 10:
+            continue
+        print(f"{x} + {y} = {x + y}")
 ###
