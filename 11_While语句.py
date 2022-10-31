@@ -20,6 +20,15 @@ import random
         3. while的内部语句必须缩进
     
     4. while也可也被嵌套
+        while con1:
+            statement1:
+            statement2:
+            ...
+            
+            while con2:
+                statement1:
+                statement2:
+                ...
 """
 
 ###
