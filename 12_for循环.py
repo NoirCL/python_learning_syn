@@ -31,6 +31,8 @@
             statement
             for 临时变量2 in 待处理的数据集（序列 ）:
                 statement
+
+    8. for循环和while循环都可以嵌套使用
 """
 
 ###
