@@ -8,9 +8,15 @@
     2. for语句
         for 临时变量 in 待处理的数据集：
             statement
+    3. for循环被称为遍历循环
+    4. for循环无法定义循环条件，只能依次取出内容进行处理（所以被处理的数据集不可以无限大）
 """
 
 ###
 for char in "Hello World":
     print(char)
+
+a = "Hello World"
+for b in a:
+    print(b)
 ###
