@@ -56,6 +56,35 @@
                     return value
                 变量 = 函数()
             3. return语句之后的内容是不会被执行的
+            4. 如果函数没有使用return返回数据，函数依旧会有一个返回指，None
+                None表示，没有任何实际的意义，也就是返回了空的意思
+                函数也可也主动去返回None：return None
+            5. None的用处
+                1. 用在函数的无返回指上
+                2. 在if判断中，None等同于False，也就是假
+                     def check(age):
+                        if age > 18:
+                            return "Success"
+                        else:
+                            return None
+
+                    result = check(12)
+
+                    if not result :
+                            print("result is None")
+                3. 用来声明没有意义的变量上
+
+        8. 用来说明函数的文档：
+            '''
+                函数说明
+                : pram x: 形参x的说明
+                : pram y: 形参y的说明
+                : return: 返回值的说明
+            '''
+
+        9. 函数的嵌套调用：
+            函数的嵌套调用：在一个函数里面又调用了另外一个函数
+            在A里面调用了B，会将B执行完后，返回A中继续执行A中没有执行完的语句
 
 """
 
@@ -107,3 +136,18 @@ add(1, 2)
 add2(1, 2, 3)
 r = add3(1, 2)
 print(f"add3's ans is {r}")
+print(f"{say_hi()}, {type(say_hi())}")
+
+
+def check(age):
+
+    if age > 18:
+        return "Success"
+    else:
+        return None
+
+
+result = check(12)
+
+if not result:
+    print("result is None")
